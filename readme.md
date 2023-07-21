@@ -7,8 +7,7 @@ we-cli, a node cli tool for wei_design
 - npm
 
 ``` sh
-npm install
-npm install -g
+npm install @wei_design/we-cli -g
 ```
 
 ## 功能
@@ -33,15 +32,3 @@ npm install -g
 ### we upgrade 
 
 升级
-
-## 用到的包
-
-chalk （控制台字符样式）
-commander （实现 NodeJS 命令行）
-download （实现文件远程下载）
-fs-extra （增强的基础文件操作库）
-handlebars （实现模板字符替换）
-inquirer （实现命令行之间的交互）
-log-symbols （为各种日志级别提供着色符号）
-ora （优雅终端 Spinner 等待动画）
-update-notifier （npm 在线检查更新）

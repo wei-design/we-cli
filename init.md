@@ -1,14 +1,51 @@
-# vite + ts + eslint + prettier
+# 从0搭建一个Node Cli
 
-## npm init
+> 参考
 
-```bash
-npm init
+[用Node.js开发一个Command Line Interface (CLI)](https://zhuanlan.zhihu.com/p/38730825)
+
+[开发前端 CLI 脚手架思路解析](https://mp.weixin.qq.com/s/iRN4CxP1gFpwyoInUeZtrw)
+
+## 初始化
+
+### 创建`cli`对应的文件夹
+
+`mkdir we-cli && cd we-cli`
+
+### 创建`package`
+
+`npm init`
+
+添加入口文件配置
+
+```json
+{
+    "main": "bin/we.js",
+    "bin": {
+        "we": "bin/we.js"
+    }
+}
 ```
+
+### 创建入口文件
+
+`mkdir bin && cd bin`
+
+`touch we.js`
+
+并输出
+
+`console.log(this is my cli);`
+
+### 全局使用
+
+在命令行输入 `npm link` 或 `npm install -g` 将`cli`安装到全局，
+
+这样就可以直接使用 `we` 命令了
 
 ## eslint + prettier + husky + lint-staged + commitlint 配置
 
-这里只做 vite + ts + eslint + prettier 的配置
+这里只做 eslint + prettier 的配置
 
 ### eslint
 
@@ -160,8 +197,30 @@ trim_trailing_whitespace = false
 
 ```
 
-
-
-
 husky + lint-staged + commitlint 见 [vue3-quick-start](https://forguo.cn/f2e/%E5%B7%A5%E7%A8%8B%E5%8C%96/Vue3%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA.html)
 
+## 发布
+
+[参考](https://juejin.cn/post/6877768129745944589)
+
+- nrm ls
+
+列出所有的`npm`源
+
+- npm login
+
+- npm publish
+
+## 用到的组件
+
+- [figlet](https://link.zhihu.com/?target=https%3A//github.com/cmatsuoka/figlet) 基于ASCII字符组成的字符画【骚气的控制台输出】
+- [commander](https://link.zhihu.com/?target=https%3A//github.com/tj/commander.js) CLI常用开发框架
+- [chalk](https://link.zhihu.com/?target=https%3A//github.com/chalk/chalk) 终端文字加颜色js组件
+- [blessed-contrib](https://link.zhihu.com/?target=https%3A//github.com/yaronn/blessed-contrib) 命令行可视化组件
+- [inquirer](https://link.zhihu.com/?target=https%3A//github.com/SBoudrias/Inquirer.js) 命令行交互信息收集组件
+- [log-symbols](https://github.com/sindresorhus/log-symbols) 可以在终端上显示出 √ 或 × 等的图标。
+- [download-git-repo](https://www.npmjs.com/package/download-git-repo) Download and extract a git repository (GitHub, GitLab, Bitbucket) from node
+- [fs-extra]() 增强的基础文件操作库
+- [handlebars]() 实现模板字符替换
+- [ora]() 优雅终端 Spinner 等待动画
+- [update-notifier]() npm 在线检查更新

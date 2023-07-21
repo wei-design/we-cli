@@ -8,7 +8,7 @@ const fs = require('fs-extra')
 const path = require('path')
 const chalk = require('chalk')
 const logSymbols = require('log-symbols')
-const { downloadGitRepo } = require('./util')
+const { downloadGitRepo } = require('./utils')
 /**
  *
  * @param appName
