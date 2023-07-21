@@ -1,13 +1,16 @@
 # @wei_design/we-cli
 
+[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
+[![Wei Design](https://img.shields.io/npm/v/@wei_design/we-cli.svg?style=flat-square)](https://www.npmjs.org/package/@wei_design/we-cli)
+
 we-cli, a node cli tool for wei_design
 
 ## Usage
 
-- npm
+- pnpm
 
 ``` sh
-npm install @wei_design/we-cli -g
+pnpm install @wei_design/we-cli -g
 ```
 
 ## 功能
@@ -18,17 +21,19 @@ npm install @wei_design/we-cli -g
 
 支持以下类型：
 
-- vue2 
-- vue3
-- react
-- taro
-- koa2
-- vitepress
+- [x] vue3
+- [ ] vue2 
+- [ ] react
+- [ ] taro
+- [ ] koa2
+- [ ] vitepress
 
 ### we create
 
-创建组件【可选vue2及vue3组件，或者组件库模式】
+根据模板创建页面或组件
 
 ### we upgrade 
 
-升级
+升级检测
+
+...
