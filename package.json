@@ -2,15 +2,22 @@
     "name": "@wei_design/we-cli",
     "version": "0.1.0",
     "description": "we-cli, a node cli tool for wei_design",
-    "main": "bin/index.js",
+    "main": "bin/we.js",
     "bin": {
-        "we": "bin/index.js"
+        "we": "bin/we.js"
     },
+    "files": [
+        "bin",
+        "packages",
+        "readme.md",
+        "changelog.md"
+    ],
     "scripts": {
         "commit": "cz",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint . --ext .js,.ts --fix --ignore-path .gitignore",
         "format": "prettier --write .",
+        "clean:modules": "rimraf node_modules",
         "prepare": "husky install"
     },
     "keywords": [
@@ -19,24 +26,35 @@
         "we-cli",
         "forguo"
     ],
-    "author": "wforguo@qq.com",
+    "author": "forguo <wforguo@qq.com>",
     "license": "ISC",
     "homepage": "https://github.com/wei-design/we-cli#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wei-design/we-cli"
+        "url": "git+https://github.com/wei-design/we-cli.git"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.6.6",
         "@commitlint/config-conventional": "^17.6.6",
         "@release-it/conventional-changelog": "^7.0.0",
+        "chalk": "^4.1.2",
+        "commander": "^11.0.0",
+        "download-git-repo": "^3.0.2",
         "eslint": "^8.45.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^5.0.0",
+        "execa": "^5.1.1",
+        "fs-extra": "^11.1.1",
+        "handlebars": "^4.7.7",
         "husky": "^8.0.0",
+        "inquirer": "^7.3.3",
         "lint-staged": "^13.2.3",
+        "log-symbols": "^4.0.0",
+        "ora": "^5.4.1",
         "prettier": "^3.0.0",
-        "release-it": "^16.1.2"
+        "release-it": "^16.1.2",
+        "rimraf": "^5.0.1",
+        "update-notifier": "^4.1.3"
     },
     "engines": {
         "node": ">=16.0.0"
