@@ -1,0 +1,60 @@
+{
+    "name": "@wei_design/we-cli",
+    "version": "0.1.0",
+    "description": "we-cli, a node cli tool for wei_design",
+    "main": "bin/index.js",
+    "bin": {
+        "we": "bin/index.js"
+    },
+    "scripts": {
+        "commit": "cz",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint . --ext .js,.ts --fix --ignore-path .gitignore",
+        "format": "prettier --write .",
+        "prepare": "husky install"
+    },
+    "keywords": [
+        "@wei_design/we-cli",
+        "wei_design",
+        "we-cli",
+        "forguo"
+    ],
+    "author": "wforguo@qq.com",
+    "license": "ISC",
+    "homepage": "https://github.com/wei-design/we-cli#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wei-design/we-cli"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.6.6",
+        "@commitlint/config-conventional": "^17.6.6",
+        "@release-it/conventional-changelog": "^7.0.0",
+        "eslint": "^8.45.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.2.3",
+        "prettier": "^3.0.0",
+        "release-it": "^16.1.2"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,vue}": [
+            "eslint --fix",
+            "git add ."
+        ]
+    }
+}
