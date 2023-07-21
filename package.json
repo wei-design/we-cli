@@ -9,16 +9,17 @@
     "files": [
         "bin",
         "packages",
+        "template",
         "readme.md",
-        "changelog.md"
+        "CHANGELOG.md"
     ],
     "scripts": {
         "commit": "cz",
-        "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint . --ext .js,.ts --fix --ignore-path .gitignore",
         "format": "prettier --write .",
         "clean:modules": "rimraf node_modules",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "release": "release-it"
     },
     "keywords": [
         "@wei_design/we-cli",
@@ -39,6 +40,7 @@
         "@release-it/conventional-changelog": "^7.0.0",
         "chalk": "^4.1.2",
         "commander": "^11.0.0",
+        "dayjs": "^1.11.9",
         "download-git-repo": "^3.0.2",
         "eslint": "^8.45.0",
         "eslint-config-prettier": "^8.8.0",

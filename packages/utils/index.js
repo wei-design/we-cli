@@ -4,12 +4,9 @@
  * @Description: utils
  */
 
-const downloadGitRepo = require('./downloadGitRepo')
-const errorHandle = require('./errorHandle')
-const installModules = require('./installModules')
-
 module.exports = {
-    downloadGitRepo,
-    errorHandle,
-    installModules
+    downloadGitRepo: require('./downloadGitRepo'),
+    errorHandle: require('./errorHandle'),
+    installModules: require('./installModules'),
+    readFoldFiles: require('./readFoldFiles')
 }

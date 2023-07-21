@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 // 用node来运行这个文件
-/**
- * @Author: forguo
- * @Date: 2023/7/22 10:24
- * @Description: 入口文件
- */
 
 const program = require('commander')
 const chalk = require('chalk')
@@ -20,10 +15,10 @@ program
     })
 
 program
-    .command('create')
-    .description(`create a new page or component module【可选项目模式或者组件库模式】`)
-    .action(() => {
-        require('../packages/create')()
+    .command('create <module-name>')
+    .description(`create a new page or component module [默认vue3 + ts]`)
+    .action(name => {
+        require('../packages/create')(name)
     })
 
 program
@@ -55,22 +50,3 @@ if (!process.argv.slice(2).length) {
 
 // 解析命令行参数
 program.parse(process.argv)
-
-// function camelize (str) {
-//     return str.replace(/-(\w)/g, (_, c) => c ? c.toUpperCase() : '')
-// }
-
-// commander passes the Command object itself as options,
-// extract only actual options into a fresh object.
-// function cleanArgs(cmd) {
-//     const args = {}
-//     cmd.options.forEach(o => {
-//         const key = camelize(o.long.replace(/^--/, ''))
-//         // if an option is not present and Command has a method with the same name
-//         // it should not be copied
-//         if (typeof cmd[key] !== 'function' && typeof cmd[key] !== 'undefined') {
-//             args[key] = cmd[key]
-//         }
-//     })
-//     return args
-// }

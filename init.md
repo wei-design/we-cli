@@ -2,8 +2,6 @@
 
 > 参考
 
-[用Node.js开发一个Command Line Interface (CLI)](https://zhuanlan.zhihu.com/p/38730825)
-
 [开发前端 CLI 脚手架思路解析](https://mp.weixin.qq.com/s/iRN4CxP1gFpwyoInUeZtrw)
 
 ## 初始化
@@ -220,7 +218,7 @@ husky + lint-staged + commitlint 见 [vue3-quick-start](https://forguo.cn/f2e/%E
 - [inquirer](https://link.zhihu.com/?target=https%3A//github.com/SBoudrias/Inquirer.js) 命令行交互信息收集组件
 - [log-symbols](https://github.com/sindresorhus/log-symbols) 可以在终端上显示出 √ 或 × 等的图标。
 - [download-git-repo](https://www.npmjs.com/package/download-git-repo) Download and extract a git repository (GitHub, GitLab, Bitbucket) from node
-- [fs-extra]() 增强的基础文件操作库
-- [handlebars]() 实现模板字符替换
-- [ora]() 优雅终端 Spinner 等待动画
-- [update-notifier]() npm 在线检查更新
+- [fs-extra](https://www.npmjs.com/package/fs-extra) 增强的基础文件操作库
+- [handlebars](https://www.npmjs.com/package/handlebars) 实现模板字符替换
+- [ora](https://www.npmjs.com/package/ora) 优雅终端 Spinner 等待动画
+- [update-notifier](https://www.npmjs.com/package/update-notifier) npm 在线检查更新
