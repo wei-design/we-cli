@@ -1,6 +1,6 @@
 {
     "name": "@wei_design/we-cli",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "we-cli, a node cli tool for wei_design",
     "main": "bin/we.js",
     "bin": {

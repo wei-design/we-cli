@@ -1,5 +1,12 @@
 
 
+# [0.2.0](https://github.com/wei-design/we-cli/compare/0.1.0...0.2.0) (2023-07-27)
+
+
+### Features
+
+* update dependencies from devDependencies ([d5771c5](https://github.com/wei-design/we-cli/commit/d5771c5e287f7c85833375f2c34a46b37f5c1980))
+
 # 0.1.0 (2023-07-21)
 
 
