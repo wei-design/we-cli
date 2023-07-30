@@ -1,5 +1,12 @@
 
 
+## [0.2.1](https://github.com/wei-design/we-cli/compare/0.2.0...0.2.1) (2023-07-30)
+
+
+### Features
+
+* 修改仓库地址 ([f8f74f3](https://github.com/wei-design/we-cli/commit/f8f74f31500c9b8855cffc6214731a0f5d3268c3))
+
 # [0.2.0](https://github.com/wei-design/we-cli/compare/0.1.0...0.2.0) (2023-07-27)
 
 
