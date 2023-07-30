@@ -7,9 +7,9 @@
 const config = {
     // 仓库配置
     githosting: 'github',
-    gitusername: 'wei-design',
+    gitusername: 'wforguo',
     // 模板项目列表
-    templateList: ['vue2', 'vue3', 'react', 'taro2', 'taro3', 'vitepress']
+    templateList: ['vue2', 'vue3', 'react', 'taro2', 'taro3', 'vitepress', 'koa2']
 }
 
 module.exports = config

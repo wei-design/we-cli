@@ -42,7 +42,7 @@ const downloadGitRepo = async function (appName, targetDir, clone = false) {
         // 正确写法：'github:username/repository#master'
         /*******仓库地址********/
 
-        const gitPath = `${githosting}:${gitusername}/${templateType}-template#master`
+        const gitPath = `${githosting}:${gitusername}/${templateType}-quick-start#master`
         fs.mkdirp(targetDir, async () => {
             // 项目目录创建
             console.log(logSymbols.info, `创建项目目录：`, chalk.green(`${targetDir}`))
