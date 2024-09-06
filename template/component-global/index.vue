@@ -37,7 +37,5 @@ const handleClick = (event: MouseEvent) => {
 </script>
 
 <style lang="scss">
-.{{ name }} {
-
-}
+@import './style/index';
 </style>

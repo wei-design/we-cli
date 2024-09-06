@@ -1,16 +1,16 @@
-# @wei_design/we-cli
+# @wei-design/we-cli
 
 [![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
-[![Wei Design](https://img.shields.io/npm/v/@wei_design/we-cli.svg?style=flat-square)](https://www.npmjs.org/package/@wei_design/we-cli)
+[![Wei Design](https://img.shields.io/npm/v/@wei-design/we-cli.svg?style=flat-square)](https://www.npmjs.org/package/@wei-design/we-cli)
 
-we-cli, a node cli tool for wei_design
+we-cli, a node cli tool for wei-design
 
 ## Usage
 
 - pnpm
 
 ``` sh
-pnpm install @wei_design/we-cli -g
+pnpm install @wei-design/we-cli -g
 ```
 
 ## 功能

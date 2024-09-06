@@ -1,7 +1,7 @@
 {
-    "name": "@wei_design/we-cli",
+    "name": "@wei-design/we-cli",
     "version": "0.2.1",
-    "description": "we-cli, a node cli tool for wei_design",
+    "description": "we-cli, a node cli tool for wei-design",
     "main": "bin/we.js",
     "bin": {
         "we": "bin/we.js"
@@ -22,8 +22,8 @@
         "release": "release-it"
     },
     "keywords": [
-        "@wei_design/we-cli",
-        "wei_design",
+        "@wei-design/we-cli",
+        "wei-design",
         "we-cli",
         "forguo"
     ],

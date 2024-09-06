@@ -4,21 +4,26 @@
  * @Description: {{ name }}
 -->
 <template>
-    <div class="{{ name }}">
+    <div class="{{ name }}" @click="handleClick">
         {{ name }}
+        {{ id }}
     </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
-<script lang="ts">
-export default {
+<script lang="ts" setup>
+defineOptions({
     name: '{{ name }}'
+})
+
+
+const title = ref<string>('')
+const handleClick = (event: MouseEvent) => {
 }
+
 </script>
 
 <style lang="scss">
-@import './style/index';
+.{{ name }} {
+
+}
 </style>

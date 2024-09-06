@@ -31,7 +31,20 @@ module.exports = async name => {
                 type: 'list',
                 name: 'moduleType',
                 message: '请选择页面或者组件类型',
-                choices: ['page', 'component']
+                choices: [
+                    {
+                        name: 'page',
+                        value: 'page'
+                    },
+                    {
+                        name: 'component',
+                        value: 'component'
+                    },
+                    {
+                        name: 'component-global',
+                        value: 'component-global'
+                    }
+                ]
             }
         ])
 
@@ -56,7 +69,7 @@ module.exports = async name => {
 
             // 模板数据
             const data = {
-                name: name,
+                name,
                 author: process.env.USER,
                 date: dayjs().format('YYYY-MM-DD HH:mm:ss')
             }
@@ -65,6 +78,7 @@ module.exports = async name => {
             readFoldFiles(targetDir).forEach(filePath => {
                 // 读取模板文件
                 const template = fs.readFileSync(filePath, 'utf-8')
+                // 模板替换
                 const res = handlebars.compile(template)(data)
                 fs.outputFileSync(filePath, res)
             })
