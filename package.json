@@ -57,7 +57,7 @@
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^5.0.0",
         "lint-staged": "^13.2.3",
-        "release-it": "^16.1.2",
+        "release-it": "^16.3.0",
         "rimraf": "^5.0.1"
     },
     "config": {
