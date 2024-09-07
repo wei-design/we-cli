@@ -1,7 +1,8 @@
 # @wei-design/we-cli
 
-[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
-[![Wei Design](https://img.shields.io/npm/v/@wei-design/we-cli.svg?style=flat-square)](https://www.npmjs.org/package/@wei-design/we-cli)
+[![@wei-design/we-cli](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
+[![@wei-design/we-cli](https://img.shields.io/npm/v/@wei-design/we-cli.svg?style=flat-square)](https://www.npmjs.org/package/@wei-design/we-cli)
+[![@wei-design/we-cli](https://img.shields.io/npm/dt/@wei-design/we-cli)](https://www.npmjs.org/package/@wei-design/we-cli)
 
 we-cli, a node cli tool for wei-design
 
