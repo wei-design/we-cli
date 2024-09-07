@@ -13,8 +13,10 @@
         "draft": false
     },
     "npm": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org/",
         "publish": true
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     }
 }
