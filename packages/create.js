@@ -37,6 +37,10 @@ module.exports = async name => {
                         value: 'page'
                     },
                     {
+                        name: 'page-curd',
+                        value: 'page-curd'
+                    },
+                    {
                         name: 'component',
                         value: 'component'
                     },
@@ -70,7 +74,7 @@ module.exports = async name => {
             // 模板数据
             const data = {
                 name,
-                author: process.env.USER,
+                author: process.env.USERNAME,
                 date: dayjs().format('YYYY-MM-DD HH:mm:ss')
             }
 
@@ -87,6 +91,6 @@ module.exports = async name => {
             console.error(logSymbols.error, `Copy template failed:`, chalk.red(`${e}`))
         }
     } catch (err) {
-        console.error(logSymbols.error, `Create failed：`, chalk.red(`${err}`))
+        console.error(logSymbols.error, `Create failed:`, chalk.red(`${err}`))
     }
 }

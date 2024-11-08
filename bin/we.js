@@ -16,7 +16,7 @@ program
 
 program
     .command('create <module-name>')
-    .description(`create a new page or component module [默认vue3 + ts]`)
+    .description(`create a new page or component module [vue3 + ts is default]`)
     .action(name => {
         require('../packages/create')(name)
     })

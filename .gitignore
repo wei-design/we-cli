@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 *.local
-demos
+playgrounds
 
 # Editor directories and files
 .vscode/*

@@ -207,7 +207,7 @@ husky + lint-staged + commitlint 见 [vue3-quick-start](https://forguo.cn/f2e/%E
 
 - npm login
 
-- npm publish
+- npm publish --access public
 
 ## 用到的组件
 

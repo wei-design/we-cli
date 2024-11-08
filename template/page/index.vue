@@ -6,7 +6,6 @@
 <template>
     <div class="{{ name }}" @click="handleClick">
         {{ name }}
-        {{ id }}
     </div>
 </template>
 
