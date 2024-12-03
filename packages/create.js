@@ -33,20 +33,20 @@ module.exports = async name => {
                 message: '请选择页面或者组件类型',
                 choices: [
                     {
-                        name: 'page',
-                        value: 'page'
+                        name: 'es-package',
+                        value: 'es-package'
                     },
                     {
-                        name: 'page-curd',
-                        value: 'page-curd'
+                        name: 'vue-page-curd',
+                        value: 'vue-page-curd'
                     },
                     {
-                        name: 'component',
-                        value: 'component'
+                        name: 'vue-component',
+                        value: 'vue-component'
                     },
                     {
-                        name: 'component-global',
-                        value: 'component-global'
+                        name: 'vue-component-global',
+                        value: 'vue-component-global'
                     }
                 ]
             }
