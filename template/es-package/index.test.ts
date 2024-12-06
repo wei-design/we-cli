@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { {{ name }} } from '.'
 
 describe('{{ name }}', () => {
-    it('no param', () => {
+    it('test', () => {
         const test = {{ name }}()
-        expect(test).toEqual(undefined)
+        expect(test).not.toBe(undefined)
     })
 })
