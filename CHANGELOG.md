@@ -1,5 +1,15 @@
 
 
+# [0.2.0](https://github.com/wei-design/we-cli/compare/0.1.0...0.2.0) (2024-12-09)
+
+
+### Features
+
+* 更新测试用例 ([61def41](https://github.com/wei-design/we-cli/commit/61def415b7c11b8bb355e3000831421ad0fdfecb))
+* 优化 release-it  配置 ([2c445a2](https://github.com/wei-design/we-cli/commit/2c445a2183233f3c75c6bb3b8d99761dcea09e88))
+* add es-package template ([09fa873](https://github.com/wei-design/we-cli/commit/09fa873e17d944030607788052b0f390cefcbf5c))
+* add playground ([871642d](https://github.com/wei-design/we-cli/commit/871642d37b239346f5a20e1aec17d33c74694f9b))
+
 # 0.1.0 (2024-09-07)
 
 
