@@ -24,9 +24,9 @@ const props = withDefaults(defineProps<IProps>(), {
     id: ''
 })
 
-const emits = defineEmits({
-    'click': (e: MouseEvent) => void
-})
+const emits = defineEmits<{
+    click: [event: MouseEvent],
+}>()
 
 const title = ref<string>('')
 const handleClick = (event: MouseEvent) => {

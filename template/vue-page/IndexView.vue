@@ -21,7 +21,7 @@ const handleClick = (event: MouseEvent) => {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .{{ name }} {
 
 }

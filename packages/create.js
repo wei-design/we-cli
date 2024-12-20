@@ -37,6 +37,10 @@ module.exports = async name => {
                         value: 'es-package'
                     },
                     {
+                        name: 'vue-page',
+                        value: 'vue-page'
+                    },
+                    {
                         name: 'vue-page-curd',
                         value: 'vue-page-curd'
                     },
